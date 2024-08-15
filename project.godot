@@ -11,8 +11,16 @@ config_version=5
 [application]
 
 config/name="New Game Template"
+run/main_scene="res://Scenes/Levels/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioManager="*res://Scripts/Core/audio_manager.gd"
+EventSystem="*res://Scripts/Core/event_system.gd"
+InputManager="*res://Scripts/Core/input_manager.gd"
+SceneManager="*res://Scripts/Core/scene_manager.gd"
 
 [rendering]
 
